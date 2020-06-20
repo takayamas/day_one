@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: silver;
+            text-align: center;
+            font-family: sans-serif;
+            margin-top: 10%;
+        }
+        p {
+            font-size: 100px;
+        }
+        .add {
+            margin-top: 10px;
+        }
+    </style>
+    <title>Day_One 02</title>
+</head>
+<body>
+    <div>
+        <h2>COUNTER</h2>
+        <p><a id="clicks">0</a></p>
+        <br>
+        <button class="btn btn-primary" onclick="decrease()">LOWER COUNT</button><br><br>
+        <button class="btn btn-primary" onclick="increase()">ADD COUNT</button>
+    </div>
+    <script type="text/javascript">
+        let n=0;
+        function increase() {
+            n++;
+            document.getElementById('clicks').innerHTML = n;
+        }
+        function decrease() {
+            n--;
+            document.getElementById('clicks').innerHTML = n;
+        }
+    </script>
+</body>
+</html>
